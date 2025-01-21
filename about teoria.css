@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    background: fixed rgb(77, 77, 77) url(img/fondo33.JPG) no-repeat center center/cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Section Styles */
+.Teoria_Tecnicas {
+    padding: 2rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    gap: 2rem;
+    background-color: rgb(238, 163, 0);
+    border: 1px solid rgb(180, 123, 0);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Teoria_Notas {
+    padding: 2rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    gap: 2rem;
+    background-color: rgb(238, 163, 0);
+    border: 1px solid rgb(101, 61, 2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button--primary {
+    background-color: rgb(219, 16, 2);
+    border: 1px solid rgb(172, 117, 0);
+    border-radius: 5px;
+
+}
+
+.button--primary:hover {
+    background-color: rgb(144, 10, 0);
+}
+
+.button--secondary {
+    background-color: rgb(219, 16, 2);
+}
+
+.button--secondary:hover {
+    background-color: rgb(144, 10, 0);
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}

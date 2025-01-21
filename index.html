@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Web sobre Temas de Guitarra">
+    <meta name="author" content="Enrique Lopez">
+    <title>Todo Sobre Guitarra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header: Cabecera de la página con navegación principal -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="#inicio" class="nav__logo--link">Todo Sobre Guitarra</a>
+            </div>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nosotros" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#productos" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="nav__toggle" aria-label="Abrir menú">
+                &#9776;
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main: Contenido principal de la página -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section section--inicio">
+            <div class="section__content">
+                <h1 class="section__title">Bienvenidos a "Todo Guitarra"</h1>
+                <p class="section__description">Sitio Web sobre Temas de Guitarra</p>
+                <img src="img/guitarra logo.jpg" alt="Logo de Todo Guitarra" class="section__image">
+                <br>
+                <a href="#nosotros" class="button button--primary">Conoce Más</a>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="section section--nosotros">
+            <div class="section__content">
+                <h2 class="section__title">¿Cual es nuestro objetivo?</h2>
+                <p class="section__description">Esta es una página web elavorada con el
+                    objetivo de apoyar a todos aquellos principianttes, intermedios, avanzados
+                    o a cualquier persona que tenga el interes de consultar y/o aprender la teoria de
+                    este bello
+                    instrumento que es la guitarra. Sabemos lo dificil y estresante que puede ser aprender
+                    una cantidad
+                    de informacion tan grande y por eso puedes consultar esta pagina para ayudarte en el
+                    recorrido.
+</p>
+            </div>
+        </section>
+
+        <!-- Sección Productos -->
+        <section id="productos" class="section section--productos">
+            <div class="section__content">
+                <h2 class="section__title">Nuestros Apartados</h2>
+                <div class="products">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section section--contacto">
+            <div class="section__content">
+                <h2 class="section__title">Contacto</h2>
+                <form action="https://formspree.io/f/movvgdra" method="POST" class="form">
+                    <div class="form__group">
+                        <label for="nombre" class="form__label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="mensaje" class="form__label">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" class="form__textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="button button--secondary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Pie de página -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__text">© 2024 Todo Sobre Guitarra. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    background: fixed rgb(77, 77, 77) url(img/fondo33.JPG) no-repeat center center/cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Section Styles */
+.section {
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button--primary {
+    background-color: rgb(110, 110, 110);
+    border: 1px solid rgb(83, 6, 1);
+    border-radius: 5px;
+
+}
+
+.button--primary:hover {
+    background-color: rgb(144, 10, 0);
+}
+
+.button--secondary {
+    background-color: rgb(110, 110, 110);
+}
+
+.button--secondary:hover {
+    background-color: rgb(144, 10, 0);
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
