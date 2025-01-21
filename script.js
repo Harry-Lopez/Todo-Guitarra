@@ -71,21 +71,21 @@ function setupHamburgerMenu() {
     const escalasButtons = document.querySelectorAll('.escalas-button');
     escalasButtons.forEach(button => {
         button.addEventListener('click', () => {
-            window.open('aboutEscalas.html', '_blank');
+            window.open('about escalas.html', '_blank');
         });
     });
 
     const teoriaButtons = document.querySelectorAll('.teoria-button');
     teoriaButtons.forEach(button => {
         button.addEventListener('click', () => {
-            window.open('aboutTeoria.html', '_blank');
+            window.open('about teoria.html', '_blank');
         });
     });
 
     const aboutButtons = document.querySelectorAll('.about-button');
 aboutButtons.forEach(button => {
     button.addEventListener('click', () => {
-        window.open('about.html', '_blank');
+        window.open('about acordes.html', '_blank');
     });
 });
 
