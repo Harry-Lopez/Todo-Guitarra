@@ -4,17 +4,17 @@
 const products = [
     {
         title: "Acordes/Chords",
-        description: "Todas las formas de poner un acorde a lo largo del diapason de la guitarra.",
+        description: "Todas las formas de poner un acorde a lo largo del diapasón de la guitarra.",
         image: "img/apartado 1.jpg"
     },
     {
         title: "Escalas/Scales",
-        description: "Lo que se nos dificulta a muchos musicos...las formas de tocar una escala a lo largo del diapason.",
+        description: "Lo que se nos dificulta a muchos músicos...las formas de tocar una escala a lo largo del diapasón.",
         image: "img/apartado 2.png"
     },
     {
         title: "Teoria Musical",
-        description: "Todas las tecnicas que se pueden hacer en la guitarra electrica o acustica, asi como los principios y fundamentos de este instrumento.",
+        description: "Todas las técnicas que se pueden hacer en la guitarra eléctrica o acústica, asi como los principios y fundamentos de este instrumento.",
         image: "img/apartado 3.jpg"
     }
 ];
@@ -45,7 +45,8 @@ function generateCards() {
                 <img src="${product.image}" alt="${product.title}" class="product__image">
                 ${product.title === "Acordes/Chords" ? '<button class="about-button acordes-button">Acordes</button>' : ''}
                 ${product.title === "Escalas/Scales" ? '<button class="about-button escalas-button">Escalas</button>' : ''}
-                ${product.title === "Teoria Musical" ? '<button class="about-button teoria-button">Explorar</button>' : ''}
+                ${product.title === "Teoria Musical" ? '<button class="about-button teoria-button">Teoria</button>' : ''}
+
             </div>
         `;
         productsContainer.innerHTML += cardHTML; // Agrega la tarjeta al contenedor
@@ -67,13 +68,6 @@ function setupCarousel() {
 function setupHamburgerMenu() {
     const toggleButton = document.querySelector(".nav__toggle"); // Botón hamburguesa
     const navMenu = document.querySelector(".nav__menu"); // Menú de navegación
-    
-    const escalasButtons = document.querySelectorAll('.escalas-button');
-    escalasButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            window.open('about escalas.html', '_blank');
-        });
-    });
 
     const teoriaButtons = document.querySelectorAll('.teoria-button');
     teoriaButtons.forEach(button => {
@@ -82,13 +76,19 @@ function setupHamburgerMenu() {
         });
     });
 
-    const aboutButtons = document.querySelectorAll('.about-button');
-aboutButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        window.open('about acordes.html', '_blank');
+    const escalasButtons = document.querySelectorAll('.escalas-button');
+    escalasButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            window.open('about escalas.html', '_blank');
+        });
     });
-});
 
+    const aboutButtons = document.querySelectorAll('.about-button');
+    aboutButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            window.open('about acordes.html', '_blank');
+        });
+    });
 
     // Función para alternar el menú
     toggleButton.addEventListener("click", () => {

@@ -81,3 +81,11 @@ h4{
     font-size: 40px;
 }
 
+/* Media Queries */
+@media (max-width: 767px) {
+    #Galeria-Acordes{
+        transform: scale(1.0);
+        transform-origin: top left;
+    }
+
+}

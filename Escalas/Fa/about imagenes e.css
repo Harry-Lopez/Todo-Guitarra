@@ -1,0 +1,61 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    background: fixed rgb(77, 77, 77) url(fondo33.JPG) no-repeat center center/cover;
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+img{
+    margin: 40px;
+    border: 3px solid rgb(180, 9, 0);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.5);
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    #Fa{
+        transform: scale(1.0);
+        transform-origin: top left;
+
+        img:hover{
+            transform: scale(1.0);
+        }
+    }
+    #Fam{
+        transform: scale(1.0);
+        transform-origin: top left;
+
+        img:hover{
+            transform: scale(1.0);
+        }
+    }
+
+}

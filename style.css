@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     background: fixed rgb(77, 77, 77) url(img/fondo33.JPG) no-repeat center center/cover;
 }
@@ -127,7 +127,7 @@ button {
     transition: background-image 1s ease-in-out;
 }
 
-.section--productos {
+.section--apartados {
     background-color: #2c2c2c;
 }
 

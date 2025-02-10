@@ -24,18 +24,6 @@ ul {
     list-style: none;
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-img:hover {
-    transform: scale(1.1);
-}
-
 button {
     cursor: pointer;
 }
@@ -79,4 +67,13 @@ button {
 h4{
     color: rgb(255, 255, 255);
     font-size: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    #Galeria-Acordes{
+        transform: scale(1.0);
+        transform-origin: top left;
+    }
+
 }
